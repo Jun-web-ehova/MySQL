@@ -1,0 +1,34 @@
+問題１
+1　データベース
+2　リレーショナルデータベース
+3　表
+4　カラム
+5　レコード
+6　フィールド
+7　SQL
+8  MySQL
+9  mysql -u root -p
+10 データ型
+
+
+問題２
+
+create database coachtest;
+
+use coachtest;
+
+create table products(id int auto_increment primary key not null,name varchar(20) not null,price int not null,expiration_date date not null,number int not null);
+
+INSERT INTO products SET id=1,name='納豆',price=250,expiration_date='2021-04-17',number=3;
+
+INSERT INTO products SET id=2,name='豆腐',price=170,expiration_date='2021-04-23',number=2;
+
+INSERT INTO products SET id=3,name='玉ねぎ',price=120,expiration_date='2021-04-21',number=4;
+
+INSERT INTO products SET id=4,name='ニンニク',price=250,expiration_date='2021-04-09',number=5;
+
+INSERT INTO products SET id=5,name='キムチ',price=300,expiration_date='2021-04-22',number=2;
+
+SELECT name,expiration_date FROM products;
+
+SELECT * FROM products WHERE price>=250 OR number<=3;
